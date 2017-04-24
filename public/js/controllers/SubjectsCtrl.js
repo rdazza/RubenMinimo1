@@ -4,18 +4,7 @@ angular.module('MinimApp').controller('SubjectsCtrl',['$scope','$http','$routePa
     $scope.SubjectError = {};
     $scope.SubSearch = {};
     $scope.Season = {};
-    $scope.OrderDo = {};
 
-    $scope.Order = function (value) {
-        $scope.OrderDo = value;
-    };
-    $scope.Order2 = function () {
-        $scope.OrderDo = '-students.length';
-    };
-    $scope.Order3 = function () {
-        $scope.OrderDo = '+students.length';
-        console.log($scope.OrderDo);
-    };
 
     // when landing on the page, get all subjects
     $http.get('/subjects')
