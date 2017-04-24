@@ -3,7 +3,7 @@ angular.module('MinimApp').controller('SubjectCtrl',['$scope','$http','$routePar
 
     var SubjectID = window.location.href.split("/").pop();
 
-    // when landing on the page get subject
+
     $http.get('/subjects/'+ SubjectID)
         .success(function(data) {
             $scope.subject = data;
