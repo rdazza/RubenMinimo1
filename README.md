@@ -1,3 +1,2 @@
-# Minim1EA
-EA Minimo1
+# Minim1
 Need to use command bower install and npm install before run

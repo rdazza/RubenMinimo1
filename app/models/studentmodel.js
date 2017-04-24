@@ -1,6 +1,4 @@
-/**
- * Created by tonim on 22/11/2016.
- */
+
 var mongoose = require('mongoose');
 
 // define the schema for our user model
